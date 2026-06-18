@@ -15,28 +15,28 @@ export function Pricing() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3 lg:items-stretch">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:items-stretch">
           {pricingPackages.map((item) => (
             <article
               key={item.name}
-              className={`relative flex flex-col rounded-[1.75rem] border p-6 transition duration-300 hover:-translate-y-1.5 sm:p-8 ${
+              className={`relative flex flex-col rounded-2xl border p-5 transition duration-300 hover:-translate-y-1.5 sm:p-7 lg:rounded-[1.75rem] lg:p-8 ${
                 item.highlighted
-                  ? "border-blue-400 bg-navy-950 text-white shadow-premium lg:-mt-4 lg:mb-4"
+                  ? "border-blue-400 bg-navy-950 text-white shadow-premium md:col-span-2 lg:col-span-1 lg:-mt-4 lg:mb-4"
                   : "border-slate-200 bg-white text-slate-900 shadow-soft hover:shadow-premium"
               }`}
             >
               {item.highlighted ? (
-                <span className="absolute right-6 top-6 rounded-full bg-blue-500 px-4 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-white shadow-glow">
+                <span className="mb-4 w-fit rounded-full bg-blue-500 px-3 py-1.5 text-xs font-black uppercase tracking-normal text-white shadow-glow sm:absolute sm:right-6 sm:top-6 sm:mb-0 sm:px-4">
                   Paling Populer
                 </span>
               ) : null}
-              <h3 className={`text-2xl font-extrabold ${item.highlighted ? "pr-32" : ""}`}>
+              <h3 className={`text-2xl font-extrabold ${item.highlighted ? "sm:pr-32" : ""}`}>
                 {item.name}
               </h3>
               <p className={`mt-4 text-sm leading-7 ${item.highlighted ? "text-blue-100" : "text-slate-600"}`}>
                 {item.description}
               </p>
-              <p className="mt-7 text-4xl font-extrabold tracking-[-0.03em]">{item.price}</p>
+              <p className="mt-6 text-3xl font-extrabold tracking-normal sm:mt-7 sm:text-4xl">{item.price}</p>
               <ul className="mt-7 flex-1 space-y-3">
                 {item.features.map((feature) => (
                   <li key={feature} className="flex gap-3 text-sm leading-6">

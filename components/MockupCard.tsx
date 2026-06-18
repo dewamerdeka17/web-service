@@ -9,9 +9,9 @@ type MockupCardProps = {
 export function MockupCard({ project, size = "default" }: MockupCardProps) {
   return (
     <div
-      className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-3 shadow-soft"
+      className="overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-soft sm:rounded-[1.5rem] sm:p-3"
     >
-      <div className="overflow-hidden rounded-[1.15rem] border border-slate-200 bg-slate-50">
+      <div className="overflow-hidden rounded-lg border border-slate-200 bg-slate-50 sm:rounded-[1.15rem]">
         <div className="flex items-center gap-2 border-b border-slate-200 bg-white px-3 py-3">
           <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
@@ -22,7 +22,7 @@ export function MockupCard({ project, size = "default" }: MockupCardProps) {
         </div>
         <div
           className={`relative overflow-hidden bg-slate-100 ${
-            size === "large" ? "aspect-[16/10]" : "aspect-[16/11]"
+            size === "large" ? "aspect-[4/3] sm:aspect-[16/10]" : "aspect-[4/3] sm:aspect-[16/11]"
           }`}
         >
           <Image

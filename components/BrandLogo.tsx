@@ -16,20 +16,20 @@ export function BrandLogo({
 
   return (
     <span className={`inline-flex items-center gap-3 ${className}`}>
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white shadow-soft ring-1 ring-slate-200/70">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white shadow-soft ring-1 ring-slate-200/70 sm:h-12 sm:w-12 sm:rounded-2xl">
         <Image
           src="/images/dewa-web-service-logo.svg"
           alt=""
           width={44}
           height={44}
           aria-hidden="true"
-          className="h-11 w-11"
+          className="h-9 w-9 sm:h-11 sm:w-11"
           priority
         />
       </span>
       <span className="min-w-0">
         <span
-          className={`block whitespace-nowrap text-[1.35rem] leading-none tracking-[-0.03em] ${
+          className={`block whitespace-nowrap text-lg leading-none tracking-normal sm:text-[1.35rem] ${
             isLight ? "text-white" : "text-navy-950"
           }`}
         >

@@ -24,7 +24,7 @@ export default async function TokonesiaProductsPage({
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <nav className="mx-auto flex demo-shell flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <Link href="/demo/tokonesia-mini" className="text-xl font-extrabold text-slate-950">
             TokoNesia Mini
           </Link>
@@ -41,7 +41,7 @@ export default async function TokonesiaProductsPage({
       </header>
 
       <main className="py-12 sm:py-16">
-        <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div className="mx-auto demo-shell">
           <Link
             href="/demo/tokonesia-mini"
             className="inline-flex items-center gap-2 rounded-md text-sm font-bold text-blue-700 hover:text-blue-800"
@@ -50,7 +50,7 @@ export default async function TokonesiaProductsPage({
             Kembali ke homepage
           </Link>
           <div className="mt-8 max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+            <p className="text-sm font-bold uppercase tracking-normal text-blue-700">
               Semua Produk
             </p>
             <h1 className="mt-3 text-4xl font-extrabold tracking-normal text-slate-950 sm:text-5xl">

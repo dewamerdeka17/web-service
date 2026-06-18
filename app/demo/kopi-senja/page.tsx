@@ -139,7 +139,7 @@ function SectionTitle({
 }) {
   return (
     <div className="mx-auto max-w-2xl text-center">
-      <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-700">{eyebrow}</p>
+      <p className="text-sm font-bold uppercase tracking-normal text-amber-700">{eyebrow}</p>
       <h2 className="mt-3 text-3xl font-bold tracking-normal text-stone-950 sm:text-4xl">
         {title}
       </h2>
@@ -152,11 +152,11 @@ export default function KopiSenjaDemoPage() {
   return (
     <div id="home" className="bg-[#fff7ed] text-stone-900">
       <header className="sticky top-0 z-50 border-b border-amber-900/10 bg-[#fff7ed]/95 backdrop-blur">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <nav className="mx-auto flex demo-shell flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <a href="#home" className="text-xl font-extrabold tracking-normal text-amber-950">
             Kopi Senja
           </a>
-          <div className="flex flex-wrap gap-3 text-sm font-semibold text-stone-700 sm:justify-end">
+          <div className="-mx-2 flex gap-2 overflow-x-auto pb-1 text-sm font-semibold text-stone-700 sm:mx-0 sm:flex-wrap sm:justify-end sm:overflow-visible sm:pb-0">
             {navItems.map((item) => (
               <a key={item.href} href={item.href} className="rounded-md px-2 py-1 hover:text-amber-800">
                 {item.label}
@@ -179,7 +179,7 @@ export default function KopiSenjaDemoPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-amber-950 via-amber-950/80 to-amber-950/30" />
           </div>
-          <div className="relative mx-auto grid min-h-[680px] w-[min(1120px,calc(100%-32px))] items-center py-20">
+          <div className="relative mx-auto grid min-h-[560px] demo-shell items-center py-16 sm:min-h-[640px] sm:py-20 lg:min-h-[680px]">
             <div className="max-w-2xl">
               <p className="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-amber-100 ring-1 ring-white/20">
                 Warung kopi lokal untuk nongkrong santai
@@ -214,8 +214,8 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section id="tentang" className="py-16 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="relative min-h-[420px] overflow-hidden rounded-lg">
+          <div className="mx-auto grid demo-shell gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="relative min-h-[260px] overflow-hidden rounded-lg sm:min-h-[360px] lg:min-h-[420px]">
               <Image
                 src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80"
                 alt="Interior hangat warung Kopi Senja"
@@ -225,7 +225,7 @@ export default function KopiSenjaDemoPage() {
               />
             </div>
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-amber-700">
                 Tentang Usaha
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-stone-950 sm:text-4xl">
@@ -257,7 +257,7 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Keunggulan"
               title="Dibuat untuk pengalaman ngopi yang santai dan mudah."
@@ -280,7 +280,7 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section id="menu" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Menu Favorit"
               title="Pilihan kopi, non-kopi, dan snack."
@@ -326,7 +326,7 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section id="galeri" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Galeri"
               title="Suasana hangat untuk menikmati kopi."
@@ -349,9 +349,9 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section id="lokasi" className="py-16 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-amber-700">
                 Lokasi
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-stone-950 sm:text-4xl">
@@ -393,9 +393,9 @@ export default function KopiSenjaDemoPage() {
         </section>
 
         <section id="kontak" className="bg-amber-950 py-16 text-white sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-200">
+              <p className="text-sm font-bold uppercase tracking-normal text-amber-200">
                 Kontak
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
@@ -452,7 +452,7 @@ export default function KopiSenjaDemoPage() {
       </main>
 
       <footer className="border-t border-amber-900/10 bg-[#fff7ed] py-8">
-        <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 text-sm text-stone-600 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex demo-shell flex-col gap-4 text-sm text-stone-600 sm:flex-row sm:items-center sm:justify-between">
           <p>
             Copyright {new Date().getFullYear()} Kopi Senja. All rights reserved.
           </p>

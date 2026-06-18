@@ -18,14 +18,14 @@ export function Faq() {
           align="center"
         />
 
-        <div className="mx-auto mt-12 grid max-w-4xl gap-4">
+        <div className="mx-auto mt-10 grid max-w-4xl gap-4 lg:mt-12">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;
 
             return (
               <article
               key={item.question}
-                className={`overflow-hidden rounded-2xl border p-5 transition duration-300 ${
+                className={`overflow-hidden rounded-xl border p-4 transition duration-300 sm:rounded-2xl sm:p-5 ${
                   isOpen
                     ? "border-blue-200 bg-white shadow-soft"
                     : "border-slate-200 bg-white/70 hover:border-blue-200 hover:bg-white"
@@ -35,7 +35,7 @@ export function Faq() {
                   type="button"
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                  className="focus-ring flex w-full items-center justify-between gap-4 rounded-xl text-left text-base font-bold text-navy-950"
+                  className="focus-ring flex w-full items-center justify-between gap-3 rounded-xl text-left text-base font-bold text-navy-950 sm:gap-4"
                 >
                   {item.question}
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-navy-50 text-navy-700">

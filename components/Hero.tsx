@@ -5,20 +5,20 @@ import { buildWhatsAppUrl, siteConfig } from "@/data/site";
 
 export function Hero() {
   return (
-    <section id="beranda" className="relative isolate overflow-hidden bg-[radial-gradient(circle_at_top_left,#dbeafe_0,transparent_34%),linear-gradient(180deg,#f8fafc_0%,#ffffff_100%)] py-16 sm:py-24 lg:py-28">
-      <div className="absolute right-[-120px] top-20 -z-10 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
-      <div className="absolute bottom-10 left-[-120px] -z-10 h-72 w-72 rounded-full bg-emerald-200/35 blur-3xl" />
+    <section id="beranda" className="relative isolate overflow-hidden bg-[radial-gradient(circle_at_top_left,#dbeafe_0,transparent_34%),linear-gradient(180deg,#f8fafc_0%,#ffffff_100%)] py-12 sm:py-20 lg:py-28">
+      <div className="absolute right-[-180px] top-20 -z-10 h-72 w-72 rounded-full bg-blue-300/25 blur-3xl sm:right-[-120px] sm:h-80 sm:w-80" />
+      <div className="absolute bottom-10 left-[-180px] -z-10 h-64 w-64 rounded-full bg-emerald-200/30 blur-3xl sm:left-[-120px] sm:h-72 sm:w-72" />
 
-      <div className="section-shell grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+      <div className="section-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-12">
         <div className="animate-fade-up">
-          <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-navy-600 shadow-sm backdrop-blur">
+          <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-blue-200 bg-white/80 px-3 py-2 text-xs font-bold uppercase tracking-normal text-navy-600 shadow-sm backdrop-blur sm:px-4 sm:text-sm">
             <Sparkles size={16} aria-hidden="true" />
             Website UMKM terjangkau
           </p>
-          <h1 className="mt-6 max-w-4xl text-4xl font-extrabold tracking-[-0.04em] text-navy-950 sm:text-5xl lg:text-7xl">
+          <h1 className="mt-6 max-w-4xl text-4xl font-extrabold tracking-normal text-navy-950 sm:text-5xl lg:text-7xl">
             {siteConfig.tagline}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+          <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:mt-6 sm:text-xl">
             Bantu usaha kamu tampil rapi, cepat dipahami, dan mudah dihubungi lewat WhatsApp dengan website yang mobile-first dan siap dibagikan ke calon pelanggan.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -32,13 +32,13 @@ export function Hero() {
             </CtaButton>
           </div>
 
-          <div className="mt-10 grid max-w-2xl gap-3 text-sm sm:grid-cols-3">
+          <div className="mt-8 grid max-w-2xl gap-3 text-sm sm:mt-10 sm:grid-cols-3">
             {[
               ["100+", "UMKM terbantu"],
               ["Mobile", "Tampilan responsive"],
               ["WhatsApp", "CTA siap klik"]
             ].map(([value, label]) => (
-              <div key={value} className="rounded-2xl border border-white bg-white/80 px-4 py-4 shadow-soft backdrop-blur">
+              <div key={value} className="rounded-xl border border-white bg-white/80 px-4 py-4 shadow-soft backdrop-blur sm:rounded-2xl">
                 <p className="text-2xl font-extrabold text-navy-950">{value}</p>
                 <p className="mt-1 font-semibold text-slate-600">{label}</p>
               </div>
@@ -68,8 +68,8 @@ export function Hero() {
             <p className="mt-2 text-sm font-bold">Tampilan lebih dipercaya</p>
           </div>
 
-          <div className="rounded-[2rem] border border-white bg-white/85 p-3 shadow-premium backdrop-blur">
-            <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50">
+          <div className="rounded-2xl border border-white bg-white/85 p-2 shadow-premium backdrop-blur sm:rounded-[2rem] sm:p-3">
+            <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 sm:rounded-[1.5rem]">
               <div className="flex items-center gap-2 border-b border-slate-200 bg-white px-4 py-3">
                 <span className="h-3 w-3 rounded-full bg-red-400" />
                 <span className="h-3 w-3 rounded-full bg-yellow-400" />
@@ -79,17 +79,17 @@ export function Hero() {
                 </span>
               </div>
 
-              <div className="bg-white p-5 sm:p-7">
-                <div className="rounded-[1.5rem] bg-gradient-to-br from-navy-950 via-navy-800 to-blue-600 p-6 text-white shadow-glow">
+              <div className="bg-white p-3 sm:p-7">
+                <div className="rounded-xl bg-gradient-to-br from-navy-950 via-navy-800 to-blue-600 p-5 text-white shadow-glow sm:rounded-[1.5rem] sm:p-6">
                   <div className="flex flex-wrap items-center justify-between gap-3">
-                    <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em]">
+                    <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-normal">
                       Website usaha
                     </span>
                     <span className="rounded-full bg-whatsapp px-3 py-1 text-xs font-bold">
                       Chat WhatsApp
                     </span>
                   </div>
-                  <h2 className="mt-8 max-w-md text-3xl font-extrabold tracking-[-0.03em] sm:text-4xl">
+                  <h2 className="mt-8 max-w-md text-2xl font-extrabold tracking-normal sm:text-4xl">
                     Landing page siap jualan
                   </h2>
                   <p className="mt-4 max-w-md leading-7 text-blue-100">
@@ -101,21 +101,21 @@ export function Hero() {
                   </div>
                 </div>
 
-                <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                <div className="mt-5 grid gap-3 sm:grid-cols-3 sm:gap-4">
                   {[
                     ["Layanan", "Card rapi"],
                     ["Paket", "Harga jelas"],
                     ["Portfolio", "Preview asli"]
                   ].map(([title, text]) => (
-                    <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                      <div className="h-9 w-9 rounded-xl bg-blue-100" />
+                    <div key={title} className="rounded-xl border border-slate-200 bg-slate-50 p-4 sm:rounded-2xl">
+                      <div className="h-9 w-9 rounded-lg bg-blue-100 sm:rounded-xl" />
                       <p className="mt-4 font-bold text-navy-950">{title}</p>
                       <p className="mt-1 text-sm text-slate-500">{text}</p>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div className="mt-5 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:rounded-2xl">
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <div className="h-3 w-24 rounded-full bg-slate-200" />

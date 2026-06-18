@@ -15,7 +15,7 @@ export function OrderSteps() {
               title="Proses dibuat jelas dari konsultasi sampai website online."
               description="Cocok untuk client yang belum paham teknis karena setiap tahap punya output yang mudah dicek."
             />
-            <CtaButton href={buildWhatsAppUrl()} variant="whatsapp" className="mt-8">
+            <CtaButton href={buildWhatsAppUrl()} variant="whatsapp" className="mt-8 w-full sm:w-auto">
               <MessageCircle size={18} aria-hidden="true" />
               Mulai konsultasi
             </CtaButton>
@@ -23,8 +23,8 @@ export function OrderSteps() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {orderSteps.map((step, index) => (
-              <article key={step.title} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
-                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-navy-500 text-sm font-bold text-white shadow-glow">
+              <article key={step.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft sm:rounded-2xl">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-500 text-sm font-bold text-white shadow-glow sm:rounded-2xl">
                   {index + 1}
                 </span>
                 <h3 className="mt-4 text-lg font-bold text-navy-950">{step.title}</h3>

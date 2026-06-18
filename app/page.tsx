@@ -20,13 +20,13 @@ export default function HomePage() {
             title="Website sederhana yang dibuat untuk bantu usaha terlihat siap dipercaya."
             description="Saya membantu UMKM, toko kecil, dan personal brand membuat website rapi, cepat, dan mudah digunakan. Cocok untuk promosi usaha, katalog produk, dan meningkatkan kepercayaan pelanggan."
           />
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               ["Cepat", "Struktur jelas supaya calon pelanggan cepat paham usaha kamu."],
               ["Responsif", "Tampilan nyaman dibuka dari HP, tablet, laptop, dan desktop."],
               ["Mudah", "CTA WhatsApp dibuat menonjol agar konsultasi tidak ribet."]
             ].map(([title, text]) => (
-              <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:bg-white hover:shadow-soft">
+              <div key={title} className="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:bg-white hover:shadow-soft sm:rounded-2xl">
                 <h3 className="text-lg font-bold text-navy-950">{title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
               </div>

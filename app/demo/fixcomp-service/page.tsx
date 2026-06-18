@@ -118,7 +118,7 @@ function SectionTitle({
 }) {
   return (
     <div className="mx-auto max-w-2xl text-center">
-      <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-300">{eyebrow}</p>
+      <p className="text-sm font-bold uppercase tracking-normal text-cyan-300">{eyebrow}</p>
       <h2 className="mt-3 text-3xl font-bold tracking-normal text-white sm:text-4xl">
         {title}
       </h2>
@@ -131,11 +131,11 @@ export default function FixCompServiceDemoPage() {
   return (
     <div id="home" className="bg-slate-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <nav className="mx-auto flex demo-shell flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <a href="#home" className="text-xl font-extrabold text-white">
             FixComp Service
           </a>
-          <div className="flex flex-wrap gap-3 text-sm font-semibold text-slate-300 sm:justify-end">
+          <div className="-mx-2 flex gap-2 overflow-x-auto pb-1 text-sm font-semibold text-slate-300 sm:mx-0 sm:flex-wrap sm:justify-end sm:overflow-visible sm:pb-0">
             {navItems.map((item) => (
               <a key={item.href} href={item.href} className="rounded-md px-2 py-1 hover:text-cyan-300">
                 {item.label}
@@ -148,7 +148,7 @@ export default function FixCompServiceDemoPage() {
       <main>
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.24),transparent_34%),linear-gradient(135deg,#020617,#0f172a)]" />
-          <div className="relative mx-auto grid min-h-[680px] w-[min(1120px,calc(100%-32px))] gap-10 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="relative mx-auto grid demo-shell gap-8 py-12 sm:py-16 lg:min-h-[680px] lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-10">
             <div>
               <p className="inline-flex rounded-full bg-cyan-400/10 px-4 py-2 text-sm font-bold text-cyan-200 ring-1 ring-cyan-300/20">
                 Diagnosa jelas, pengerjaan aman, konsultasi dulu
@@ -179,7 +179,7 @@ export default function FixCompServiceDemoPage() {
                 </a>
               </div>
             </div>
-            <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-white/10 bg-slate-900 shadow-2xl">
+            <div className="relative min-h-[260px] overflow-hidden rounded-lg border border-white/10 bg-slate-900 shadow-2xl sm:min-h-[360px] lg:min-h-[420px]">
               <Image
                 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
                 alt="Teknisi profesional memperbaiki laptop di meja kerja"
@@ -193,7 +193,7 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section id="masalah" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Masalah Umum"
               title="Keluhan laptop yang sering ditangani."
@@ -211,9 +211,9 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section id="layanan" className="bg-white py-16 text-slate-950 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-cyan-700">
                 Layanan Service
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
@@ -241,7 +241,7 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section id="harga" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Estimasi Harga"
               title="Kisaran biaya sebelum pelanggan datang."
@@ -262,7 +262,7 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section className="bg-slate-900 py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Alur Service"
               title="Pengerjaan transparan dari konsultasi sampai serah terima."
@@ -281,9 +281,9 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section className="bg-white py-16 text-slate-950 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-cyan-700">
                 Keunggulan
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
@@ -311,7 +311,7 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle eyebrow="Testimoni" title="Contoh bukti kepercayaan pelanggan." />
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {testimonials.map(([name, quote]) => (
@@ -326,9 +326,9 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section id="lokasi" className="bg-white py-16 text-slate-950 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-cyan-700">
                 Kontak dan Lokasi
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
@@ -357,7 +357,7 @@ export default function FixCompServiceDemoPage() {
         </section>
 
         <section id="kontak" className="bg-cyan-300 py-16 text-slate-950 sm:py-20">
-          <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-6 text-center sm:items-center">
+          <div className="mx-auto flex demo-shell flex-col gap-6 text-center sm:items-center">
             <h2 className="text-3xl font-extrabold tracking-normal sm:text-4xl">
               Laptop bermasalah? Konsultasi dulu via WhatsApp.
             </h2>
@@ -379,7 +379,7 @@ export default function FixCompServiceDemoPage() {
       </main>
 
       <footer className="border-t border-white/10 bg-slate-950 py-8">
-        <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex demo-shell flex-col gap-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between">
           <p>Copyright {new Date().getFullYear()} FixComp Service. All rights reserved.</p>
           <a href={buildWhatsAppUrl()} target="_blank" rel="noreferrer" className="font-bold text-green-400">
             WhatsApp FixComp

@@ -47,7 +47,7 @@ export default async function TokonesiaProductDetailPage({ params }: ProductDeta
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] items-center justify-between gap-4 py-4">
+        <nav className="mx-auto flex demo-shell flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           <Link href="/demo/tokonesia-mini" className="text-xl font-extrabold text-slate-950">
             TokoNesia Mini
           </Link>
@@ -61,7 +61,7 @@ export default async function TokonesiaProductDetailPage({ params }: ProductDeta
       </header>
 
       <main className="py-12 sm:py-16">
-        <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div className="mx-auto demo-shell">
           <Link
             href="/demo/tokonesia-mini/products"
             className="inline-flex items-center gap-2 rounded-md text-sm font-bold text-blue-700 hover:text-blue-800"
@@ -71,7 +71,7 @@ export default async function TokonesiaProductDetailPage({ params }: ProductDeta
           </Link>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="relative min-h-[460px] overflow-hidden rounded-lg bg-white shadow-sm">
+            <div className="relative min-h-[280px] overflow-hidden rounded-lg bg-white shadow-sm sm:min-h-[380px] lg:min-h-[460px]">
               <Image
                 src={product.image}
                 alt={product.name}

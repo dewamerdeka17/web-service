@@ -25,7 +25,7 @@ export function Footer() {
 
   return (
     <footer className="bg-navy-950 py-12 text-white">
-      <div className="section-shell grid gap-10 md:grid-cols-[1.25fr_0.7fr_0.9fr_0.8fr]">
+      <div className="section-shell grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.7fr_0.9fr_0.8fr]">
         <div>
           <Link href="/" className="focus-ring rounded-xl">
             <BrandLogo variant="light" showTagline />
@@ -34,7 +34,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-blue-200">
+          <h2 className="text-sm font-bold uppercase tracking-normal text-blue-200">
             Navigasi
           </h2>
           <div className="mt-4 grid gap-2">
@@ -51,17 +51,17 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-blue-200">
+          <h2 className="text-sm font-bold uppercase tracking-normal text-blue-200">
             Kontak
           </h2>
           <div className="mt-4 grid gap-3 text-blue-100">
-            <p className="flex items-center gap-3">
-              <Mail size={17} aria-hidden="true" />
-              {siteConfig.email}
+            <p className="flex min-w-0 items-center gap-3">
+              <Mail size={17} className="shrink-0" aria-hidden="true" />
+              <span className="break-all">{siteConfig.email}</span>
             </p>
-            <p className="flex items-center gap-3">
-              <MapPin size={17} aria-hidden="true" />
-              {siteConfig.location}
+            <p className="flex min-w-0 items-center gap-3">
+              <MapPin size={17} className="shrink-0" aria-hidden="true" />
+              <span>{siteConfig.location}</span>
             </p>
             <a
               href={siteConfig.socials.instagram}
@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-blue-200">
+          <h2 className="text-sm font-bold uppercase tracking-normal text-blue-200">
             Mulai
           </h2>
           <p className="mt-4 text-blue-100">Konsultasi kebutuhan website lewat WhatsApp.</p>

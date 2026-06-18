@@ -53,13 +53,13 @@ export function TokonesiaProductBrowser({
             className="min-h-12 w-full rounded-md border border-slate-200 bg-slate-50 pl-10 pr-4 text-sm outline-none focus:border-blue-500 focus:bg-white"
           />
         </label>
-        <div className="flex flex-wrap gap-2">
+        <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0 lg:pb-0">
           {tokonesiaCategories.map((category) => (
             <button
               key={category}
               type="button"
               onClick={() => setSelectedCategory(category)}
-              className={`rounded-full px-4 py-2 text-sm font-bold transition ${
+              className={`shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ${
                 selectedCategory === category
                   ? "bg-blue-600 text-white"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"

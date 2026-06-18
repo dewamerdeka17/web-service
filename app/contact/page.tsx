@@ -21,7 +21,7 @@ export default function ContactPage() {
           align="center"
         />
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
               icon: MessageCircle,
@@ -60,7 +60,7 @@ export default function ContactPage() {
           })}
         </div>
 
-        <div className="mt-10 rounded-lg bg-navy-900 p-6 text-white sm:p-8">
+        <div className="mt-10 rounded-xl bg-navy-900 p-5 text-white sm:p-8">
           <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <h2 className="text-2xl font-bold">Siap mulai dari konsultasi gratis?</h2>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 Kirim pesan singkat dan sebutkan jenis usaha kamu. Saya akan bantu pilih paket yang paling masuk akal untuk kebutuhan awal.
               </p>
             </div>
-            <CtaButton href={buildWhatsAppUrl()} variant="whatsapp">
+            <CtaButton href={buildWhatsAppUrl()} variant="whatsapp" className="w-full sm:w-auto">
               <Send size={19} aria-hidden="true" />
               Kirim WhatsApp
             </CtaButton>

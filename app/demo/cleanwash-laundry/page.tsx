@@ -78,7 +78,7 @@ function SectionTitle({
 }) {
   return (
     <div className="mx-auto max-w-2xl text-center">
-      <p className="text-sm font-bold uppercase tracking-[0.18em] text-sky-600">{eyebrow}</p>
+      <p className="text-sm font-bold uppercase tracking-normal text-sky-600">{eyebrow}</p>
       <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
         {title}
       </h2>
@@ -91,11 +91,11 @@ export default function CleanWashLaundryDemoPage() {
   return (
     <div id="home" className="bg-sky-50 text-slate-900">
       <header className="sticky top-0 z-50 border-b border-sky-100 bg-white/95 backdrop-blur">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <nav className="mx-auto flex demo-shell flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <a href="#home" className="text-xl font-extrabold text-sky-900">
             CleanWash Laundry
           </a>
-          <div className="flex flex-wrap gap-3 text-sm font-semibold text-slate-700 sm:justify-end">
+          <div className="-mx-2 flex gap-2 overflow-x-auto pb-1 text-sm font-semibold text-slate-700 sm:mx-0 sm:flex-wrap sm:justify-end sm:overflow-visible sm:pb-0">
             {navItems.map((item) => (
               <a key={item.href} href={item.href} className="rounded-md px-2 py-1 hover:text-sky-700">
                 {item.label}
@@ -107,7 +107,7 @@ export default function CleanWashLaundryDemoPage() {
 
       <main>
         <section className="relative overflow-hidden bg-white">
-          <div className="mx-auto grid min-h-[660px] w-[min(1120px,calc(100%-32px))] gap-10 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 py-12 sm:py-16 lg:min-h-[660px] lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-10">
             <div>
               <p className="inline-flex rounded-full bg-sky-100 px-4 py-2 text-sm font-bold text-sky-800">
                 Laundry kiloan, satuan, dan antar jemput
@@ -138,7 +138,7 @@ export default function CleanWashLaundryDemoPage() {
                 </a>
               </div>
             </div>
-            <div className="relative min-h-[420px] overflow-hidden rounded-lg bg-sky-100 shadow-sm">
+            <div className="relative min-h-[260px] overflow-hidden rounded-lg bg-sky-100 shadow-sm sm:min-h-[360px] lg:min-h-[420px]">
               <Image
                 src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1400&q=80"
                 alt="Interior laundry modern dengan pakaian terlipat dan mesin cuci"
@@ -152,9 +152,9 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section id="tentang" className="py-16 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-sky-600">
+              <p className="text-sm font-bold uppercase tracking-normal text-sky-600">
                 Tentang Laundry
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -181,7 +181,7 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section id="layanan" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Layanan"
               title="Pilihan layanan laundry untuk kebutuhan harian."
@@ -200,7 +200,7 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section id="harga" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Paket Harga"
               title="Harga layanan tampil jelas sejak awal."
@@ -228,7 +228,7 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle
               eyebrow="Alur Pemesanan"
               title="Order laundry lebih mudah dari WhatsApp."
@@ -247,7 +247,7 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <SectionTitle eyebrow="Testimoni" title="Dipercaya pelanggan lokal." />
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {testimonials.map(([name, quote]) => (
@@ -262,9 +262,9 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section id="lokasi" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-sky-600">
+              <p className="text-sm font-bold uppercase tracking-normal text-sky-600">
                 Lokasi
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -293,7 +293,7 @@ export default function CleanWashLaundryDemoPage() {
         </section>
 
         <section id="kontak" className="bg-sky-900 py-16 text-white sm:py-20">
-          <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-6 text-center sm:items-center">
+          <div className="mx-auto flex demo-shell flex-col gap-6 text-center sm:items-center">
             <Clock className="mx-auto text-sky-200" size={32} aria-hidden="true" />
             <h2 className="text-3xl font-bold tracking-normal sm:text-4xl">
               Mau laundry hari ini?
@@ -315,7 +315,7 @@ export default function CleanWashLaundryDemoPage() {
       </main>
 
       <footer className="bg-white py-8">
-        <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-3 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex demo-shell flex-col gap-3 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
           <p>Copyright {new Date().getFullYear()} CleanWash Laundry. All rights reserved.</p>
           <a href={buildWhatsAppUrl()} target="_blank" rel="noreferrer" className="font-bold text-green-700">
             WhatsApp CleanWash

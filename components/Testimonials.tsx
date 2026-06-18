@@ -13,9 +13,9 @@ export function Testimonials() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-3 lg:mt-12">
           {testimonials.map((item) => (
-            <article key={item.name} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-premium">
+            <article key={item.name} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-premium sm:p-6 lg:rounded-[1.5rem]">
               <Quote size={26} className="text-navy-500" aria-hidden="true" />
               <p className="mt-5 leading-7 text-slate-700">{item.quote}</p>
               <div className="mt-6">

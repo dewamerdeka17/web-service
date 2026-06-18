@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="bg-white py-24">
       <div className="section-shell text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-navy-500">404</p>
+        <p className="text-sm font-semibold uppercase tracking-normal text-navy-500">404</p>
         <h1 className="mt-4 text-4xl font-bold text-navy-900">Halaman tidak ditemukan</h1>
         <p className="mx-auto mt-4 max-w-xl leading-7 text-slate-600">
           Link yang kamu buka belum tersedia atau sudah dipindahkan.

@@ -53,11 +53,11 @@ export default function TokonesiaMiniDemoPage() {
   return (
     <div id="home" className="bg-slate-50 text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <nav className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <nav className="mx-auto flex demo-shell flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <Link href="/demo/tokonesia-mini" className="text-xl font-extrabold text-slate-950">
             TokoNesia Mini
           </Link>
-          <div className="flex flex-wrap gap-3 text-sm font-semibold text-slate-700 sm:justify-end">
+          <div className="-mx-2 flex gap-2 overflow-x-auto pb-1 text-sm font-semibold text-slate-700 sm:mx-0 sm:flex-wrap sm:justify-end sm:overflow-visible sm:pb-0">
             {navItems.map((item) => (
               <a key={item.href} href={item.href} className="rounded-md px-2 py-1 hover:text-blue-700">
                 {item.label}
@@ -72,7 +72,7 @@ export default function TokonesiaMiniDemoPage() {
 
       <main>
         <section className="bg-white">
-          <div className="mx-auto grid min-h-[660px] w-[min(1120px,calc(100%-32px))] gap-10 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="mx-auto grid demo-shell gap-8 py-12 sm:py-16 lg:min-h-[660px] lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-10">
             <div>
               <p className="inline-flex rounded-full bg-orange-100 px-4 py-2 text-sm font-bold text-orange-700">
                 Katalog produk online untuk UMKM
@@ -103,7 +103,7 @@ export default function TokonesiaMiniDemoPage() {
                 </a>
               </div>
             </div>
-            <div className="relative min-h-[420px] overflow-hidden rounded-lg bg-slate-100 shadow-sm">
+            <div className="relative min-h-[260px] overflow-hidden rounded-lg bg-slate-100 shadow-sm sm:min-h-[360px] lg:min-h-[420px]">
               <Image
                 src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80"
                 alt="Katalog produk UMKM dengan fashion, makanan, aksesoris, dan elektronik kecil"
@@ -117,9 +117,9 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section id="kategori" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-blue-700">
                 Kategori Produk
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -145,10 +145,10 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section id="produk" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+                <p className="text-sm font-bold uppercase tracking-normal text-blue-700">
                   Produk Unggulan
                 </p>
                 <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -188,9 +188,9 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section id="promo" className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
-            <div className="rounded-lg bg-gradient-to-r from-blue-600 to-orange-500 p-8 text-white sm:p-10">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-white/80">
+          <div className="mx-auto demo-shell">
+            <div className="rounded-lg bg-gradient-to-r from-blue-600 to-orange-500 p-5 text-white sm:p-10">
+              <p className="text-sm font-bold uppercase tracking-normal text-white/80">
                 Promo Demo
               </p>
               <h2 className="mt-3 text-3xl font-extrabold tracking-normal sm:text-4xl">
@@ -205,9 +205,9 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section id="cara-order" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-blue-700">
                 Cara Order
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -228,9 +228,9 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section className="py-16 sm:py-20">
-          <div className="mx-auto w-[min(1120px,calc(100%-32px))]">
+          <div className="mx-auto demo-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+              <p className="text-sm font-bold uppercase tracking-normal text-blue-700">
                 Testimoni
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl">
@@ -250,7 +250,7 @@ export default function TokonesiaMiniDemoPage() {
         </section>
 
         <section id="kontak" className="bg-slate-950 py-16 text-white sm:py-20">
-          <div className="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-6 md:grid-cols-3">
+          <div className="mx-auto grid demo-shell gap-6 md:grid-cols-3">
             {[
               ["Search & Filter", "Pembeli bisa mencari produk lebih cepat.", Search],
               ["Produk Rapi", "Grid dan detail produk siap untuk katalog UMKM.", ShoppingBag],
@@ -263,7 +263,7 @@ export default function TokonesiaMiniDemoPage() {
               </article>
             ))}
           </div>
-          <div className="mx-auto mt-10 flex w-[min(1120px,calc(100%-32px))] flex-col gap-4 rounded-lg bg-white p-6 text-slate-950 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mx-auto mt-10 flex demo-shell flex-col gap-4 rounded-lg bg-white p-5 text-slate-950 sm:flex-row sm:items-center sm:justify-between sm:p-6">
             <div>
               <h2 className="text-2xl font-extrabold">Siap order produk?</h2>
               <p className="mt-2 text-slate-600">Hubungi admin TokoNesia Mini lewat WhatsApp.</p>
@@ -282,7 +282,7 @@ export default function TokonesiaMiniDemoPage() {
       </main>
 
       <footer className="bg-white py-8">
-        <div className="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col gap-3 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex demo-shell flex-col gap-3 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
           <p>Copyright {new Date().getFullYear()} TokoNesia Mini. All rights reserved.</p>
           <div className="flex flex-wrap gap-4 font-bold">
             <Link href="/demo/tokonesia-mini/products" className="text-blue-700">
